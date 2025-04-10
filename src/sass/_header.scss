@@ -1,0 +1,55 @@
+.head-p {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 11px;
+}
+
+.ul-header{
+     display: flex;
+    gap: 50px;
+    
+}
+
+.header-div{
+    display: flex;
+    gap: 50px;
+    margin-top: 21px;
+}
+
+// .header{
+//     // display: flex;
+//     // align-items: center;
+//     // justify-content: center;
+// }
+
+.logo{
+    margin-left: 175px;
+}
+
+.switcher{
+    margin-left: 361px;
+}
+
+
+
+
+
+
+.nav-menu {
+    display: none;
+    position: absolute;
+    margin-left: auto;
+    top: 50px;
+    left: 500px;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.burger-menu {
+    font-size: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
