@@ -22,4 +22,4 @@ const list = games.map((game) => {
     </li>`
 
 })
-gameContainerEl.insertAdjacentHTML('afterend', list)
+gameContainer.insertAdjacentHTML('afterend', list)
