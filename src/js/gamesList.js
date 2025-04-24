@@ -1,4 +1,4 @@
-const gameContainer = document.querySelector(".js-games")
+const gameContainerEL = document.querySelector(".js-games")
 
 const games = [
     {
@@ -17,9 +17,10 @@ const games = [
 ]
 
 const list = games.map((game) => {
-    return `<li id=${game.id}>
+    return `<li class="reset-li" id=${game.id}>
     <h2>${game.name}</h2>
-    </li>`
+    </li>
+    <hr>`
 
 })
-gameContainerEl.insertAdjacentHTML('afterend', list)
+gameContainerEL.insertAdjacentHTML('afterend', list)
