@@ -23,4 +23,6 @@ const list = games.map((game) => {
     <hr>`
 
 })
+
 gameContainerEL.insertAdjacentHTML('afterend', list)
+
