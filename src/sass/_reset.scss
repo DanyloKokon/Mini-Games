@@ -53,3 +53,22 @@ address {
     margin: 0 auto;
     padding: 0 16px;
 }
+
+.standart{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    //line-height: 100%;
+    // letter-spacing: 0%;
+    
+}
+
+// ::marker{
+//     display: none;
+// }
+
+ul::marker, ol::marker {
+    content: ''; /* Прибирає маркер */
+    color: white;
+}

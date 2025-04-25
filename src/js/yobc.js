@@ -9,7 +9,7 @@ const yobcEL = document.getElementById("1")
 
 const year = [
     {
-        class: "inp",
+        class: "inp flexcenter",
 
     },
 
@@ -18,9 +18,9 @@ const year = [
 const item = year.map((game) => {
     return `<h2></h2>
         <div class="${game.class}">
-        <input type="number" name="Year born" id="ybc" placeholder="Введіть рік народження" class="ybc">
+        <input type="number" name="Year born" class="ybc" id="ybc" placeholder="Введіть рік народження" class="ybc">
         
-        <button id="ybck" type="button">Button click</button>
+        <button id="ybck" class="ybck" type="button"><img src="./images/Group104.svg" alt="search"></button>
         <p class="p-answer">...</p>
         </div>`
 });
@@ -28,19 +28,20 @@ const item = year.map((game) => {
 // yobcEL.insertAdjacentHTML('beforeend', list)
 yobcEL.insertAdjacentHTML('beforeend', item)
 
-const outputEl = document.querySelector('.p-answer')
+
 const btn = document.getElementById('ybck')
 
 
 btn.addEventListener('click', () => {
+    const outputEl = document.querySelector('.p-answer')
     const valueEl = document.getElementById('ybc').value;
     console.log(valueEl % 4 === 0 && valueEl % 100 !== 0 || valueEl % 400 === 0);
     if ((valueEl % 4 === 0 && valueEl % 100 !== 0) || (valueEl % 400 === 0)) {
-        //inputEl.classList.add('green')
+        outputEl.classList.toggle("green");
         outputEl.textContent = "Ви народилися у високосний рік!"
         console.log('Ви народилися у високосний рік!');
     } else  {
-        //inputEl.classList.add('red')
+        outputEl.classList.toggle('red');
         outputEl.textContent = 'Ви народилися у звичайний рік!'
 
     }
