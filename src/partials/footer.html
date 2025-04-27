@@ -1,28 +1,49 @@
-<footer class="footer">
-  <div class="container">
-    <div class="flex_div">
-      <a href="#" class="#">
-        <img src="#" alt="Logo" />
-      </a>
-      <div>
-        <ul class="list">
-          <li class="item">Тел: +38 (123) 456 78 90</li>
-          <li class="item">E-Mail: codingmagic@gmail.com</li>
-          <li class="item">Facebook: CodingMagic</li>
-          <li class="item">Twitter: CodingMagic</li>
-          <li class="item">Instagram: CodingMagic</li>
-        </ul>
+<footer class="footer cont">
+  <div class="cont">
+    <div class="footer-content">
+      <div class="logo">
+        <img src="/src/images/footer-mia/logo_footer.svg" alt="Logo" />
       </div>
-
-      <div>
-        <h3>Opening times</h3>
-        <ul class="#">
-          <li class="#">
-            Every day <br />
-            9:00 - 22:00
-          </li>
-        </ul>
+      <ul class="footer-contacts">
+        <li>Тел: +38 (123) 456 78 90</li>
+        <li>E-Mail: codingmagic@gmail.com</li>
+        <li>Facebook: CodingMagic</li>
+        <li>Twitter: CodingMagic</li>
+        <li>Instagram: CodingMagic</li>
+      </ul>
+      <div class="footer-subscribe">
+        <form id="subscribeForm">
+          <input
+            type="email"
+            id="emailInput"
+            placeholder="Ваша ел. адреса..."
+            required
+          />
+          <button type="submit" id="subscribeBtn">Підписатись</button>
+        </form>
+        <p class="note">
+          *Підписавшись, Ви можете отримувати інформацію про новинки на сайті
+        </p>
       </div>
     </div>
   </div>
 </footer>
+
+<!-- _______________Модальне вікно_________________ -->
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-container">
+      <div class="modal-text">
+        <img src="/src/images/footer-mia/modal-img1.svg" alt="modal-img" />
+        <p>Дякуємо за підписку!</p>
+        <img src="/src/images/footer-mia/modal-img2.svg" alt="modal-img" />
+      </div>
+      <div class="modal-img">
+        <img src="/src/images/footer-mia/modal-img3.svg" alt="modal-img" />
+        <img src="/src/images/footer-mia/modal-img4.svg" alt="modal-img" />
+      </div>
+    </div>
+  </div>
+</div>

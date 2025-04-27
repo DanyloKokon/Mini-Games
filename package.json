@@ -3,9 +3,8 @@
   "version": "2.0.0",
   "description": "",
   "homepage": "https://DanyloKokon.github.io/Mini-Games",
-  "source": "src/*.html",
   "scripts": {
-    "start": "parcel",
+    "start": "parcel src/*.html",
     "build": "parcel build --public-url /Mini-Games/"
   },
   "repository": {
