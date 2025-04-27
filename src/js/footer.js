@@ -1,16 +1,10 @@
-document.getElementById("subscribeForm").addEventListener("submit", function (e) {
-    e.preventDefault(); // зупиняє перезавантаження сторінки
-    document.getElementById("modal").style.display = "block";
-  });
-  
-  document.querySelector(".close").addEventListener("click", function () {
-    document.getElementById("modal").style.display = "none";
-  });
-  
-  window.addEventListener("click", function (event) {
-    const modal = document.getElementById("modal");
-    if (event.target === modal) {
-      modal.style.display = "none";
-    }
-  });
-  
+document.getElementById("subscribeForm").addEventListener("submit", (e) => {
+  e.preventDefault();
+  const modal = document.getElementById("modal");
+  modal.style.display = "block";
+});
+
+document.querySelector(".close").addEventListener("click", () => {
+  const modal = document.getElementById("modal");
+  modal.style.display = "none";
+});
