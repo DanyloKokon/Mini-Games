@@ -1,10 +1,14 @@
-document.getElementById("subscribeForm").addEventListener("submit", (e) => {
-  e.preventDefault();
+document.addEventListener("DOMContentLoaded", () => {
+  const subscribeForm = document.getElementById("subscribeForm");
   const modal = document.getElementById("modal");
-  modal.style.display = "block";
-});
+  const closeBtn = document.querySelector(".close");
 
-document.querySelector(".close").addEventListener("click", () => {
-  const modal = document.getElementById("modal");
-  modal.style.display = "none";
+  subscribeForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    modal.classList.add("active");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.classList.remove("active");
+  });
 });
