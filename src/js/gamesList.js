@@ -32,5 +32,5 @@ const list = games.map((game) => {
 
 })
 
-gameContainerEL.insertAdjacentHTML('afterend', list)
+gameContainerEL.insertAdjacentHTML('beforeend', list)
 
