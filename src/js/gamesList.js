@@ -28,9 +28,9 @@ const list = games.map((game) => {
     return `<li class="reset-li ${game.class}" id=${game.id}>
     <h2 class="flexcenter">${game.name}</h2>
     </li>
-    <div class="flexcenter"><div class="line flexcenter"></div></div>`
+    <hr class="line">`
 
-})
+}).join('')
 
-gameContainerEL.insertAdjacentHTML('afterend', list)
+gameContainerEL.insertAdjacentHTML('beforeend', list)
 

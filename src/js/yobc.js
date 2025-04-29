@@ -16,13 +16,14 @@ const year = [
 ];
 
 const item = year.map((game) => {
-    return `<h2></h2>
+    return `
+        <div class="flexcenter">
         <div class="${game.class}">
         <input type="number" name="Year born" class="ybc" id="ybc" placeholder="Введіть рік народження" class="ybc">
         
         <button id="ybck" class="ybck" type="button"><img src="./images/Group104.svg" alt="search"></button>
         <p class="p-answer">...</p>
-        </div>`
+        </div> </div>`
 });
 
 // yobcEL.insertAdjacentHTML('beforeend', list)
@@ -37,11 +38,13 @@ btn.addEventListener('click', () => {
     const valueEl = document.getElementById('ybc').value;
     console.log(valueEl % 4 === 0 && valueEl % 100 !== 0 || valueEl % 400 === 0);
     if ((valueEl % 4 === 0 && valueEl % 100 !== 0) || (valueEl % 400 === 0)) {
-        outputEl.classList.toggle("green");
+        outputEl.classList.add("green");
+        outputEl.classList.remove("red");
         outputEl.textContent = "Ви народилися у високосний рік!"
         console.log('Ви народилися у високосний рік!');
     } else  {
-        outputEl.classList.toggle('red');
+        outputEl.classList.add('red');
+        outputEl.classList.remove("green");
         outputEl.textContent = 'Ви народилися у звичайний рік!'
 
     }

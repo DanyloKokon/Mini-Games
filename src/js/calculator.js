@@ -11,11 +11,11 @@ const item = clas.map((game) => {
     return `<div class="${game.class}">
     <input type="number" name="inp" id="input1" placeholder="Введіть число" class="input1 input">
     <div class="type">
-        <div class="part1">
+        <div class="part1 flexcenter">
             <button class="btn-calc" id="plusb"><p class="btn-col-p">+</p></button>
             <button class="btn-calc" id="multiplicationb"><p class="btn-col-p">*</p></button>
         </div>
-        <div class="par2">
+        <div class="par2 flexcenter">
             <button class="btn-calc" id="minusb"><p class="btn-col-p">-</p></button>
             <button class="btn-calc" id="divisionb"><p class="btn-col-p">/</p></button>
         </div>
