@@ -1,3 +1,4 @@
+import searchImg from '../images/Group104.svg';
 const yobcEL = document.getElementById("1")
 
 // yobc.insertAdjacentHTML('beforeend', `<h2></h2>
@@ -21,7 +22,7 @@ const item = year.map((game) => {
         <div class="${game.class}">
         <input type="number" name="Year born" class="ybc" id="ybc" placeholder="Введіть рік народження" class="ybc">
         
-        <button id="ybck" class="ybck" type="button"><img src="./images/Group104.svg" alt="search"></button>
+        <button id="ybck" class="ybck" type="button"><svg><use href="${searchImg}"></use></svg></button>
         <p class="p-answer">...</p>
         </div> </div>`
 });
