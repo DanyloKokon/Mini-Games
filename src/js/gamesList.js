@@ -21,6 +21,11 @@ const games = [
         id:4,
         name:'Калькулятор',
         class: "standart",
+    },
+    {
+        id:6,
+        name:'Google динозавр',
+        class: "standart",
     }
 ]
 
@@ -32,5 +37,5 @@ const list = games.map((game) => {
 
 })
 
-gameContainerEL.insertAdjacentHTML('afterend', list)
+gameContainerEL.insertAdjacentHTML('beforeend', list)
 
