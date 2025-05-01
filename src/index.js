@@ -4,3 +4,4 @@ import "./js/gameRSP";
 import "./js/yobc";
 import "./js/calculator";
 import "./js/footer"
+import "./js/dino"
