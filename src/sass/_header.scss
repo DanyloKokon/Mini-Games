@@ -43,6 +43,8 @@
 
 .switcher{
     margin-left: 361px;
+    cursor: pointer;
+    margin-bottom: 5px;
 }
 
 
@@ -67,3 +69,44 @@
     cursor: pointer;
 }
 
+.label-darkmode {
+    width: 40px;
+    height: 20px;
+    position: relative;
+    display: block;
+    background: #7A7A7A;
+    border-radius: 11px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.label-darkmode:after {
+    content: " ";
+    width: 20.5px;
+    height: 20px;
+    position: absolute;
+    background: #FFFFFF;
+    border: 0.7px solid #000000;
+    border-radius: 180px;
+    transition: 0.3s;
+    background-image: url('../images/sun.svg');
+    background-size: cover;
+    background-size: 15.03px 14.67px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.input-darkmode {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.input-darkmode:checked+.label-darkmode:after {
+    transform: translateX(100%);
+    background: #000000;
+    background-image: url('/src/images/moon.svg');
+    background-size: cover;
+
+}
