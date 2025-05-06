@@ -14,7 +14,7 @@ const games = [
     },
     {
         id:3,
-        name:'Name-3',
+        name:'Камінь - ножиці - папір',
         class: "standart",
     },
     {

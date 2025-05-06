@@ -140,7 +140,7 @@ const cont = [
 
 const item = cont.map((constt) => {
    return `<div class="${constt.class}">
-    <h1>Камінь - ножиці - папір</h1>
+   
     <div class="choices-wrapper">
       <div class="choices">
         <button class="choice" data-choice="rock"><img src="rock.png" alt="Камінь"></button>
