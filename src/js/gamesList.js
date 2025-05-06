@@ -9,7 +9,7 @@ const games = [
     },
     {
         id:2,
-        name:'Name-2',
+        name:'Вгадай число, яке загадав комп’ютер',
         class: "standart"
     },
     {
