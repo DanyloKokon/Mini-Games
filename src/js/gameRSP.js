@@ -1,20 +1,38 @@
-const gameContainer = document.getElementById('3')
+
+
+
+
+const gameContainer = document.getElementById('3'); 
 const body = document.body;
-const container = document.createElement('div');
-container.className = 'container';
-document.body.appendChild(container);
 
-const title = document.createElement('h1');
-title.textContent = 'Камінь - ножиці - папір';
-container.appendChild(title);
+const cont = [
+   {
+      class: 'container',
+   }
+];
 
-const choicesWrapper = document.createElement('div');
-choicesWrapper.className = 'choices-wrapper';
-container.appendChild(choicesWrapper);
+const item = cont.map((constt) => {
+   return `<div class="${constt.class}">
+   
+    <div class="choices-wrapper">
+      <div class="choices">
+        <button class="choice" data-choice="rock"><img src="rock.png" alt="Камінь"></button>
+        <button class="choice" data-choice="scissors"><img src="scissors.png" alt="Ножиці"></button>
+        <button class="choice" data-choice="paper"><img src="paper.png" alt="Папір"></button>
+      </div>
+      <div class="score-inline">
+        <p>Рахунок:</p>
+        <div>Комп'ютер: <span id="computerScore">0</span></div>
+        <div>Ви: <span id="playerScore">0</span></div>
+      </div>
+    </div>
+    <p id="result">Зробіть вибір</p>
+    <button id="computerBtn">Варіант комп'ютера</button>
+  </div>`;
+});
 
-const choicesDiv = document.createElement('div');
-choicesDiv.className = 'choices';
-choicesWrapper.appendChild(choicesDiv);
+gameContainer.insertAdjacentHTML('beforeend', item.join(''));
+const container = document.querySelector('.container');
 
 const choices = [
    { name: 'rock', img: 'rock.png', alt: 'Камінь' },
@@ -24,47 +42,26 @@ const choices = [
 
 let compScore = 0;
 let userScore = 0;
+const resultText = document.querySelector('#result');
 
-const resultText = document.createElement('p');
-resultText.id = 'result';
-resultText.textContent = 'Зробіть вибір';
-container.appendChild(resultText);
-
-choices.forEach(choice => {
-   const btn = document.createElement('button');
-   btn.className = 'choice';
-   btn.dataset.choice = choice.name;
-
-   const img = document.createElement('img');
-   img.src = choice.img;
-   img.alt = choice.alt;
-
-   btn.appendChild(img);
-   choicesDiv.appendChild(btn);
-
+document.querySelectorAll('.choice').forEach(btn => {
    btn.addEventListener('click', () => {
-      const computerChoice = choices[Math.floor(Math.random() * 3)].name;
-      playRound(choice.name, computerChoice);
+      const playerChoice = btn.dataset.choice;
+      const computerChoice = choices[Math.floor(Math.random() * choices.length)].name;
+      playRound(playerChoice, computerChoice);
    });
 });
 
-const compBtn = document.createElement('button');
-compBtn.id = 'computerBtn';
-compBtn.textContent = "Варіант комп'ютера";
-container.appendChild(compBtn);
-const scoreDiv = document.createElement('div');
-scoreDiv.className = 'score-inline';
-scoreDiv.innerHTML = `
-   <p>Рахунок:</p>
-   <div>Комп'ютер: <span id="computerScore">0</span></div>
-   <div>Ви: <span id="playerScore">0</span></div>
-`;
-choicesWrapper.appendChild(scoreDiv);
 
-const computerScoreSpan = scoreDiv.querySelector('#computerScore');
-const playerScoreSpan = scoreDiv.querySelector('#playerScore');
+document.querySelector('#computerBtn').addEventListener('click', () => {
+   const computerChoice = choices[Math.floor(Math.random() * choices.length)].name;
+   playRound(computerChoice, computerChoice);
+});
 
 function playRound(player, computer) {
+   const computerScoreSpan = document.querySelector('#computerScore');
+   const playerScoreSpan = document.querySelector('#playerScore');
+
    if (player === computer) {
       resultText.textContent = 'Нічия!';
    } else if (

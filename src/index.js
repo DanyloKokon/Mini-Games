@@ -1,3 +1,4 @@
+import "./js/enterModal"
 import "./js/header";
 import "./js/gamesList";
 import "./js/gameRSP";
@@ -6,3 +7,4 @@ import "./js/GTNTCG";
 import "./js/calculator";
 import "./js/footer";
 import "./js/dino";
+
