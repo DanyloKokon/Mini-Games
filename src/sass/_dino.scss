@@ -1,12 +1,10 @@
 #game {
     position: relative;
     width: 720px;
-    height: 241px;
+    height:241px;
     background: url('../images/back_dino.png');
     background-size: cover;
     display: flex;
-    margin-left: 300px;
-    margin-top: 92px;
 }
 
 
@@ -19,8 +17,6 @@
     background-size: cover;
     background-position: center;
     background-color: white;
-    margin-bottom: 120px;
     position: absolute;
-    bottom: 0;
-    margin-left: 50px;
+    margin-bottom: 120px;
 }
