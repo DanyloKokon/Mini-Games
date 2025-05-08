@@ -32,7 +32,7 @@ const container = document.querySelector('.container');
 
 const choices = [
    { name: 'rock', img: 'rock.png', alt: 'Камінь' },
-   { name: 'scissors', img: 'scissors.png', alt: 'Ножиці' },
+   { name: 'scissors', img: '', alt: 'Ножиці' },
    { name: 'paper', img: 'paper.png', alt: 'Папір' }
 ];
 

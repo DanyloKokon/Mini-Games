@@ -62,7 +62,7 @@ const guessGameEl = document.getElementById("2");
 
 const guessGameMarkup = `
   <div class="guess-wrap flexcenter">
-    <input type="number" id="guessInput2" placeholder="Введіть число" class="guess-input2" />
+    <input type="number" id="guessInput2" placeholder="Введіть число 1-10" class="guess-input2" />
     <button id="guessBtn2" class="guess-btn2">
       <img src="/src/images/search.png" alt="search" />
     </button>
@@ -73,7 +73,7 @@ const guessGameMarkup = `
 guessGameEl.insertAdjacentHTML("beforeend", guessGameMarkup);
 
 // 3. Гра "Вгадай число"
-const secretNumber2 = Math.floor(Math.random() * 100) + 1;
+const secretNumber2 = Math.floor(Math.random() * 10) + 1;
 
 document.getElementById("guessBtn2").addEventListener("click", () => {
   const inputEl = document.getElementById("guessInput2");
