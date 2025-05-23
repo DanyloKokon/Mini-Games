@@ -31,7 +31,7 @@ const games = [
 
 const list = games.map((game) => {
     return `<li class="reset-li ${game.class}" id=${game.id}>
-    <h2 class="flexcenter">${game.name}</h2>
+    <h2 class="flexcenter" name-main>${game.name}</h2>
     </li>
     <hr class="line">`
 

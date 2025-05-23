@@ -7,4 +7,3 @@ import "./js/GTNTCG";
 import "./js/calculator";
 import "./js/footer";
 import "./js/dino";
-
