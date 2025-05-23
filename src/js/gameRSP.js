@@ -1,7 +1,4 @@
 
-
-
-
 const gameContainer = document.getElementById('3'); 
 const body = document.body;
 
@@ -13,7 +10,6 @@ const cont = [
 
 const item = cont.map((constt) => {
    return `<div class="${constt.class}">
-   
     <div class="choices-wrapper">
       <div class="choices">
         <button class="choice" data-choice="rock"><img src="rock.png" alt="Камінь"></button>
@@ -36,7 +32,7 @@ const container = document.querySelector('.container');
 
 const choices = [
    { name: 'rock', img: 'rock.png', alt: 'Камінь' },
-   { name: 'scissors', img: 'scissors.png', alt: 'Ножиці' },
+   { name: 'scissors', img: '', alt: 'Ножиці' },
    { name: 'paper', img: 'paper.png', alt: 'Папір' }
 ];
 
