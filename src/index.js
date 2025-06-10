@@ -8,3 +8,4 @@ import "./js/calculator";
 import "./js/timeCalculator";
 import "./js/dino";
 import "./js/footer";
+import "./js/football"

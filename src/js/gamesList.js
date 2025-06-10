@@ -31,6 +31,11 @@ const games = [
         id:6,
         name:'Google динозавр',
         class: "standart",
+    },
+    {
+        id:7,
+        name:'Football',
+        class: "standart",
     }
 ]
 
