@@ -23,6 +23,11 @@ const games = [
         class: "standart",
     },
     {
+        id:5,
+        name:'Калькулятор часу',
+        class: "standart",
+    },
+    {
         id:6,
         name:'Google динозавр',
         class: "standart",

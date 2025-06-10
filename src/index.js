@@ -5,5 +5,6 @@ import "./js/gameRSP";
 import "./js/yobc";
 import "./js/GTNTCG";
 import "./js/calculator";
-import "./js/footer";
+import "./js/timeCalculator";
 import "./js/dino";
+import "./js/footer";
