@@ -1,19 +1,13 @@
-.flexcenter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .guess-container {
+.timecalc-container {
     width: 576px;
     margin-top: 36px;
     margin-bottom: 16px;
   }
   
-  .guess-input2 {
+  .timecalc-input {
     width: 215px;
     height: 35px;
-    background-color: #D7D7D7;
+    background-color: #d7d7d7;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     border: none;
@@ -21,7 +15,7 @@
     text-align: center;
   }
   
-  .guess-btn2 {
+  .timecalc-btn {
     width: 35px;
     height: 35px;
     background-color: #000000;
@@ -31,30 +25,28 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    margin-right: 149px;
+    margin-right: 50px;
   }
   
-  .guess-btn2 svg {
+  .timecalc-btn svg {
     width: 16px;
     height: 16px;
     fill: white;
   }
   
-  .guess-result2 {
+  .timecalc-result {
     font-size: 12px;
     font-weight: 400;
-    margin-left: 20px;
+    margin-right: 10px;
   }
   
-  .green {
-    color: #039900;
-  }
-  
-  .orange {
-    color: orange;
+  .timecalc-output {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
   }
   
   .red {
-    color: #FF0000;
+    color: red;
   }
   
